@@ -1,0 +1,12 @@
+[
+  {
+    "uid": "0", 
+    "atStation": "Hillerød",
+    "moveTo": "Allerød"
+  },
+  {
+    "uid": "1", 
+    "atStation": "Hillerød",
+    "moveTo": "Allerød"
+  }
+]

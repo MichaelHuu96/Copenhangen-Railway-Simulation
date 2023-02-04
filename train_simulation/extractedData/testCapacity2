@@ -1,0 +1,134 @@
+Environment:
+Tick length (seconds): 30
+Amount of ticks: 5000 (meaning the simulation will run for 41.666666666666664 hours)
+Amount of passengers generated: 125000
+Amount of Carriers: 5000
+Amount of people carriers can carry: 10
+
+
+Creating carrier simulation
+Creating train simulation
+
+Created simulations
+Running simulations
+
+Carrier simulation done
+Trains simulation done
+
+
+Calculating average travel time
+Carriers:
+15.795031666666674
+Number of passengers not arrived 0
+
+Trains:
+26.422641666666678
+Number of passengers not arrived 0
+
+
+Calculating average waiting time
+Carriers:
+1.0935016666666715
+Number of passengers not arrived 0
+
+Trains:
+7.758531666666721
+Number of passengers not arrived 0
+
+
+Calculating average travel time per distance traveled
+Carriers:
+Average under 1km 2.6916666666666678, amount traveled this distance 226
+Average under 2km, but above 1km 2.615115899444986, amount traveled this distance 1021
+Average under 5km, but above 2km 4.243515958783615, amount traveled this distance 3979
+Average under 10km, but above 5km 7.416288733839512, amount traveled this distance 9746
+Average under 20km, but above 10km 12.237540541153416, amount traveled this distance 14697
+Average more than 20km 25.45147803846348, amount traveled this distance 20331
+
+Trains:
+Average under 1km 3.698303834808261, amount traveled this distance 226
+Average under 2km, but above 1km 4.403864734299518, amount traveled this distance 966
+Average under 5km, but above 2km 7.624492666264832, amount traveled this distance 3318
+Average under 10km, but above 5km 12.254724427728997, amount traveled this distance 7179
+Average under 20km, but above 10km 19.0642967107795, amount traveled this distance 11259
+Average more than 20km 36.526781137562224, amount traveled this distance 27052
+
+
+Calculating average travel time per distance traveled (minus time spent waiting)
+Carriers:
+Average under 1km 0.8097345132743363, amount traveled this distance 226
+Average under 2km, but above 1km 1.2786483839373164, amount traveled this distance 1021
+Average under 5km, but above 2km 2.897210354360392, amount traveled this distance 3979
+Average under 10km, but above 5km 5.852914016006567, amount traveled this distance 9746
+Average under 20km, but above 10km 11.147615159556372, amount traveled this distance 14697
+Average more than 20km 24.651074713491713, amount traveled this distance 20331
+
+Trains:
+Average under 1km 0.7190265486725663, amount traveled this distance 226
+Average under 2km, but above 1km 1.3271221532091098, amount traveled this distance 966
+Average under 5km, but above 2km 3.4532851115129595, amount traveled this distance 3318
+Average under 10km, but above 5km 7.309583507452292, amount traveled this distance 7179
+Average under 20km, but above 10km 12.603117505995204, amount traveled this distance 11259
+Average more than 20km 26.834577850066538, amount traveled this distance 27052
+
+
+Calculating average traveling time based on when travel started
+Carriers:
+Average before first rush hour 14.911603375527394, amount started their travel in this timeframe 3871
+Average at first rush hour 15.566573711589022, amount started their travel in this timeframe 18647
+Average after first rush hour 15.705189115126036, amount started their travel in this timeframe 10461
+Average at second rush hour 16.264313640312803, amount started their travel in this timeframe 23020
+Average after first rush hour 15.100582263362186, amount started their travel in this timeframe 3349
+
+Trains:
+Average before first rush hour 26.05226470334974, amount started their travel in this timeframe 3871
+Average at first rush hour 26.41247385638429, amount started their travel in this timeframe 18647
+Average after first rush hour 26.45067233852742, amount started their travel in this timeframe 10461
+Average at second rush hour 26.408340573414492, amount started their travel in this timeframe 23020
+Average after first rush hour 26.8681248133772, amount started their travel in this timeframe 3349
+
+
+Calculating the energy used to accelerate for trains/carriers
+Carriers:
+Total energy spent among all carriers: 150236.1080000004
+Average energy spent per carrier: 30.04722160000008
+Total energy spent while empty among all carriers: 57636.69999999988
+Average energy spent while empty per carrier: 11.527339999999976
+
+Trains:
+Total energy spent among all trains (counting seats): 4288492.386
+Average energy spent per train (counting seats): 82471.00742307692
+Total energy spent among all trains (counting max capacity): 8829249.03
+Average energy spent per train (counting max capacity): 169793.25057692308
+
+
+Average amount of passengers per trip with carriers: 1.068056564275644
+Total trips taken 82124
+Average amount of trips taken 16.4248
+Total trips taken with passengers 46814
+Average amount of trips taken with passengers per carrier: 9.3628
+Total trips taken without passengers 35310
+Average amount of trips taken without passengers per carrier: 7.062
+
+
+
+
+
+
+
+
+
+
+
+
+====================NEW SIMULATION RUN====================
+
+
+
+
+
+
+
+
+
+

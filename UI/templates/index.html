@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Copenhagen Rail Simulation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/md-date-time-picker@2.3.0/dist/css/mdDateTimePicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-clock-timepicker@2.5.0/jquery-clock-timepicker.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.8.1/css/bootstrap-select.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.8.1/js/bootstrap-select.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   
+    <link rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" 
+      integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" 
+      crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+
+  </head>
+  <body>
+    <section style="display: table;height: 100%; width: 100%;">
+
+      <div id="MAP" style="float:left;height:45%;width:65%;">
+
+        <form action="">
+          <div class="map">
+          <fieldset style="background-color: #e3e3e3; padding-top: 0%; padding-left: 0%;padding-right: 0%; padding-bottom: 0%;">
+            
+            <div class="MAP" style="float:left; left: 5%;right: 0; width: 100%;">
+              <img src="/static/map_minmal.png" alt="map" style="height:70%;width:95%;">
+             
+            </div> 
+
+          </fieldset>
+          </div>
+        </form>
+      </div>     
+
+      <div id="Input Information" style="float:left;height:30%;width:30%;">
+        <form action="{{ url_for("Run_Simulation")}}" method="post">
+          <div class="pure-form-aligned" style="background-color: #e3e3e3; padding-left: 5%;padding-right: 0%; padding-bottom: 5%;">
+          <fieldset style="background-color: #e3e3e3; padding-left: 5%;padding-right: 0%; padding-bottom: 5%;">
+            <legend>Input Information:</legend>
+
+            <div class="pure-control-group" style=" padding-right: 5%;">
+              <label for="Number of Persons">Number of Persons</label>
+              <input type="number" id="Number of Persons" name="number_of_persons" placeholder="#Numbers" min = 0 />
+            </div>
+
+            <div class="pure-control-group">
+              <datalist id="typelist">
+                <option>Diamond</option>
+                <option>vertical</option>
+              </datalist>
+            </div>
+
+            <div class="pure-control-group">
+              <label for="Number of Trains / Carriers">Number of Trains / Carriers </label>
+              <input type="number" id="Number of Trains / Carriers" name="number_of_trains/carriers" placeholder="#Numbers" min = 0 />
+            </div>
+        
+            <!-- time picker -->
+            <form>
+              <div style="background-color: #e3e3e3; padding-left: 0%;padding-right: 50%; padding-bottom: 0%;">
+                <p>Start Time</p>
+                <input type="text" name="start_time"id="Start_time">
+              </div>
+
+              <div style="background-color: #e3e3e3; padding-left: 0%;padding-right: 50%; padding-bottom: 0%;">
+                <p>End Time</p>
+                <input type="text" name="end_time"id="End_time">
+              </div>
+            </form>  
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/jquery-clock-timepicker@2.5.0/jquery-clock-timepicker.min.js"></script>
+            <script>
+                $('#Start_time').clockTimePicker();
+                $('#End_time').clockTimePicker();
+            </script>
+
+             <!-- list of stations -->
+            <form>
+                <div>
+                  <p>Stations</p>
+                  <select class="selectpicker" name="selected_stations" multiple data-live-search="true">
+                    <option value="Hillerød">Hillerød</option>
+                    <option value="Allerød">Allerød</option>
+                    <option value="Høvelte">Høvelte</option>
+                    <option value="Birkerød">Birkerød</option>
+                    <option value="Holte">Holte</option>
+                    <option value="Virum">Virum</option>
+                    <option value="Sorgenfri">Sorgenfri</option>
+                    <option value="Lyngby">Lyngby</option>
+                    <option value="Jærgersborg">Jærgersborg</option>
+                    <option value="Gentofte">Gentofte</option>
+                    <option value="Bernstorffsvej">Bernstorffsvej</option>
+                    <option value="Køge">Køge</option>
+                    <option value="Ølby">Ølby</option>
+                    <option value="Køge Nord">Køge Nord</option>
+                    <option value="Jersie">Jersie</option>
+                    <option value="Solrød Strand">Solrød Strand</option>
+                    <option value="Karlslunde">Karlslunde</option>
+                    <option value="Greve">Greve</option>
+                    <option value="Hundige">Hundige</option>
+                    <option value="Ishøj">Ishøj</option>
+                    <option value="Vallensbæk">Vallensbæk</option>
+                    <option value="Friheden">Friheden</option>
+                    <option value="Høje Taastrup">Høje Taastrup</option>
+                    <option value="Taastrup">Taastrup</option>
+                    <option value="Glostrup">Glostrup</option>
+                    <option value="Dybbølsbro">Dybbølsbro</option>
+                    <option value="Fuglebakken">Fuglebakken</option>
+                    <option value="Østerport">Østerport</option>
+                    <option value="Nordhavn">Nordhavn</option>
+                    <option value="Svanemøllen">Svanemøllen</option>
+                    <option value="Dyssegård">Dyssegård</option>
+                    <option value="Ordrup">Ordrup</option>
+                    <option value="Klampenborg">Klampenborg</option>
+                    <option value="Buddinge">Buddinge</option>
+                    <option value="Hareskov">Hareskov</option>
+                    <option value="Skovbrynet">Skovbrynet</option>
+                    <option value="Værløse">Værløse</option>
+                    <option value="Frederikssund">Frederikssund</option>
+                    <option value="Vinge">Vinge</option>
+                    <option value="Ølstykke">Ølstykke</option>
+                    <option value="Egedal">Egedal</option>
+                    <option value="Stenløse">Stenløse</option>
+                    <option value="Veksø">Veksø</option>
+                    <option value="Kildedal">Kildedal</option>
+                    <option value="Ballerup">Ballerup</option>
+                    <option value="Malmparken">Malmparken</option>
+                    <option value="Herlev">Herlev</option>
+                    <option value="Husum">Husum</option>
+                    <option value="Jyllingevej">Jyllingevej</option>
+                    <option value="Brøndby Strand">Brøndby Strand</option>
+                    <option value="Avedøre">Avedøre</option>
+                    <option value="Albertslund">Albertslund</option>
+                    <option value="Islev">Islev</option>
+                    <option value="Måløv">Måløv</option>
+                    <option value="Skovlunde">Skovlunde</option>
+                    <option value="Vanløse">Vanløse</option>
+                    <option value="Flintholm">Flintholm'</option>
+                    <option value="KB Hallen">KB Hallen</option>
+                    <option value="Peter Bangs Vej">Peter Bangs Vej</option>
+                    <option value="Ålholm">Ålholm</option>
+                    <option value="Danshøj">Danshøj</option>
+                    <option value="Hvidovre">Hvidovre</option>
+                    <option value="Vigerslev Alle">Vigerslev Alle</option>
+                    <option value="Rødovre">Rødovre</option>
+                    <option value="Åmarken">Åmarken</option>
+                    <option value="Ny Ellebjerg">Ny Ellebjerg</option>
+                    <option value="Sjælør">Sjælør</option>
+                    <option value="Valby">Valby</option>
+                    <option value="Carlsberg">Carlsberg</option>
+                    <option value="Sydhavn">Sydhavn</option>
+                    <option value="København H">København H</option>
+                    <option value="Vesterport">Vesterport</option>
+                    <option value="Nørreport">Nørreport</option>
+                    <option value="Nørrebro">Nørrebro</option>
+                    <option value="Ryparken">Ryparken</option>
+                    <option value="Emdrup">Emdrup</option>
+                    <option value="Hellerup">Hellerup</option>
+                    <option value="Charlottenlund">Charlottenlund</option>
+                    <option value="Vangede">Vangede</option>
+                    <option value="Kildebakke">Kildebakke</option>
+                    <option value="Stengården">Stengården</option>
+                    <option value="Bagsværd">Bagsværd</option>
+                    <option value="Grøndal">Grøndal</option>
+                    <option value="Langgade">Langgade</option>
+                    <option value="Farum">Farum</option>
+                    <option value="Brøndbyøster">Brøndbyøster</option>
+                    <option value="Bispebjerg">Bispebjerg</option>
+                  </select>
+                </div>
+            </form>
+
+
+
+            <input checked="true" type="radio" name="switchers" value="Carriers">Carriers
+            <input type="radio" name="switchers" value="Trains">Trains
+
+            <div class="Run Simulation" style= "float:right;" >
+              <button type="submit">Run Simulation</button>
+            </div>
+
+            <div class="Reset" style= "float:right;" >
+              <button type="Reset">Reset</button>&emsp;&emsp;
+            </div>
+
+            <form action="">
+              <div class="Load Model">
+                <button class="Load Model">Load Model</button>
+              </div>
+              <div class="Save Model">
+                <button class="Save Model">Save Model</button>
+              </div>
+            </form>
+
+          </fieldset>
+        </form>
+      </div>
+
+      <div id="Output Information" style="float:right;height:30%;width:40%;">
+
+        <form action="">
+          <div class="pure-form-aligned">
+          <fieldset style="background-color: #e3e3e3; padding-top: 10px; padding-left: 20px;padding-right: 0px; padding-bottom: 20px;">
+            <legend>Output Information:</legend>
+            
+            <div class="commuting time">
+              <label for="commuting time">Commuting Time</label>
+              <output type="number" id="commuting time" placeholder="#Numbers">
+            </div> 
+
+          </fieldset>
+          </div>
+        </form>
+      </div>
+
+    </section>
+  
+  </body>
+</html>
+
+
+

@@ -1,0 +1,447 @@
+[
+    {
+        "station A": "Hillerød",
+        "station B": "Allerød",
+        "distance": 7.08
+    },
+    {
+        "station A": "Allerød",
+        "station B": "Birkerød",
+        "distance": 5.36
+    },
+    {
+        "station A": "Birkerød",
+        "station B": "Holte",
+        "distance": 4.64
+    },
+    {
+        "station A": "Holte",
+        "station B": "Virum",
+        "distance": 1.33
+    },
+    {
+        "station A": "Sorgenfri",
+        "station B": "Virum",
+        "distance": 1.79
+    },
+    {
+        "station A": "Lyngby",
+        "station B": "Sorgenfri",
+        "distance": 1.93
+    },
+    {
+        "station A": "Jærgersborg",
+        "station B": "Lyngby",
+        "distance": 1.36
+    },
+    {
+        "station A": "Gentofte",
+        "station B": "Jærgersborg",
+        "distance": 1.47
+    },
+    {
+        "station A": "Bernstorffsvej",
+        "station B": "Gentofte",
+        "distance": 1.49
+    },
+    {
+        "station A": "Bernstorffsvej",
+        "station B": "Hellerup",
+        "distance": 1.5
+    },
+    {
+        "station A": "Hellerup",
+        "station B": "Svanemøllen",
+        "distance": 1.83
+    },
+    {
+        "station A": "Nordhavn",
+        "station B": "Svanemøllen",
+        "distance": 1.5
+    },
+    {
+        "station A": "Nordhavn",
+        "station B": "Østerport",
+        "distance": 1.5
+    },
+    {
+        "station A": "Nørreport",
+        "station B": "Østerport",
+        "distance": 1.44
+    },
+    {
+        "station A": "Nørreport",
+        "station B": "Vesterport",
+        "distance": 0.9
+    },
+    {
+        "station A": "København H",
+        "station B": "Vesterport",
+        "distance": 0.43
+    },
+    {
+        "station A": "Dybbølsbro",
+        "station B": "København H",
+        "distance": 1
+    },
+    {
+        "station A": "Dybbølsbro",
+        "station B": "Sydhavn",
+        "distance": 1.8
+    },
+    {
+        "station A": "Sjælør",
+        "station B": "Sydhavn",
+        "distance": 0.73
+    },
+    {
+        "station A": "Ny Ellebjerg",
+        "station B": "Sjælør",
+        "distance": 0.65
+    },
+    {
+        "station A": "Ny Ellebjerg",
+        "station B": "Åmarken",
+        "distance": 1.8
+    },
+    {
+        "station A": "Friheden",
+        "station B": "Åmarken",
+        "distance": 1.62
+    },
+    {
+        "station A": "Avedøre",
+        "station B": "Friheden",
+        "distance": 1.77
+    },
+    {
+        "station A": "Avedøre",
+        "station B": "Brøndby Strand",
+        "distance": 2.08
+    },
+    {
+        "station A": "Brøndby Strand",
+        "station B": "Vallensbæk",
+        "distance": 2.11
+    },
+    {
+        "station A": "Ishøj",
+        "station B": "Vallensbæk",
+        "distance": 2.24
+    },
+    {
+        "station A": "Hundige",
+        "station B": "Ishøj",
+        "distance": 3.35
+    },
+    {
+        "station A": "Greve",
+        "station B": "Hundige",
+        "distance": 2.95
+    },
+    {
+        "station A": "Greve",
+        "station B": "Karlslunde",
+        "distance": 2.36
+    },
+    {
+        "station A": "Karlslunde",
+        "station B": "Solrød Strand",
+        "distance": 4.86
+    },
+    {
+        "station A": "Jersie",
+        "station B": "Solrød Strand",
+        "distance": 1.54
+    },
+    {
+        "station A": "Jersie",
+        "station B": "Køge Nord",
+        "distance": 3.22
+    },
+    {
+        "station A": "Køge Nord",
+        "station B": "Ølby",
+        "distance": 2.16
+    },
+    {
+        "station A": "Køge",
+        "station B": "Ølby",
+        "distance": 2.52
+    },
+    {
+        "station A": "Farum",
+        "station B": "Værløse",
+        "distance": 4.36
+    },
+    {
+        "station A": "Hareskov",
+        "station B": "Værløse",
+        "distance": 2.82
+    },
+    {
+        "station A": "Hareskov",
+        "station B": "Skovbrynet",
+        "distance": 1.99
+    },
+    {
+        "station A": "Bagsværd",
+        "station B": "Skovbrynet",
+        "distance": 1.41
+    },
+    {
+        "station A": "Bagsværd",
+        "station B": "Stengården",
+        "distance": 1.37
+    },
+    {
+        "station A": "Buddinge",
+        "station B": "Stengården",
+        "distance": 1.74
+    },
+    {
+        "station A": "Buddinge",
+        "station B": "Kildebakke",
+        "distance": 0.95
+    },
+    {
+        "station A": "Kildebakke",
+        "station B": "Vangede",
+        "distance": 1.15
+    },
+    {
+        "station A": "Dyssegård",
+        "station B": "Vangede",
+        "distance": 1.16
+    },
+    {
+        "station A": "Dyssegård",
+        "station B": "Emdrup",
+        "distance": 1.33
+    },
+    {
+        "station A": "Emdrup",
+        "station B": "Ryparken",
+        "distance": 2
+    },
+    {
+        "station A": "Ryparken",
+        "station B": "Svanemøllen",
+        "distance": 1.3
+    },
+    {
+        "station A": "Carlsberg",
+        "station B": "Dybbølsbro",
+        "distance": 1.54
+    },
+    {
+        "station A": "Carlsberg",
+        "station B": "Valby",
+        "distance": 1.38
+    },
+    {
+        "station A": "Danshøj",
+        "station B": "Valby",
+        "distance": 1.3
+    },
+    {
+        "station A": "Danshøj",
+        "station B": "Hvidovre",
+        "distance": 1.2
+    },
+    {
+        "station A": "Hvidovre",
+        "station B": "Rødovre",
+        "distance": 1
+    },
+    {
+        "station A": "Brøndbyøster",
+        "station B": "Rødovre",
+        "distance": 1.15
+    },
+    {
+        "station A": "Brøndbyøster",
+        "station B": "Glostrup",
+        "distance": 2.63
+    },
+    {
+        "station A": "Albertslund",
+        "station B": "Glostrup",
+        "distance": 2.86
+    },
+    {
+        "station A": "Albertslund",
+        "station B": "Taastrup",
+        "distance": 5.49
+    },
+    {
+        "station A": "Høje Taastrup",
+        "station B": "Taastrup",
+        "distance": 2.08
+    },
+    {
+        "station A": "Klampenborg",
+        "station B": "Ordrup",
+        "distance": 1.59
+    },
+    {
+        "station A": "Charlottenlund",
+        "station B": "Ordrup",
+        "distance": 1.5
+    },
+    {
+        "station A": "Charlottenlund",
+        "station B": "Hellerup",
+        "distance": 2.5
+    },
+    {
+        "station A": "Langgade",
+        "station B": "Valby",
+        "distance": 0.82
+    },
+    {
+        "station A": "Langgade",
+        "station B": "Peter Bangs Vej",
+        "distance": 1.24
+    },
+    {
+        "station A": "Flintholm",
+        "station B": "Peter Bangs Vej",
+        "distance": 0.9
+    },
+    {
+        "station A": "Flintholm",
+        "station B": "Vanløse",
+        "distance": 0.48
+    },
+    {
+        "station A": "Jyllingevej",
+        "station B": "Vanløse",
+        "distance": 0.96
+    },
+    {
+        "station A": "Islev",
+        "station B": "Jyllingevej",
+        "distance": 1.12
+    },
+    {
+        "station A": "Husum",
+        "station B": "Islev",
+        "distance": 1.22
+    },
+    {
+        "station A": "Herlev",
+        "station B": "Husum",
+        "distance": 1.71
+    },
+    {
+        "station A": "Herlev",
+        "station B": "Skovlunde",
+        "distance": 2.56
+    },
+    {
+        "station A": "Malmparken",
+        "station B": "Skovlunde",
+        "distance": 1.12
+    },
+    {
+        "station A": "Ballerup",
+        "station B": "Malmparken",
+        "distance": 1.86
+    },
+    {
+        "station A": "Ballerup",
+        "station B": "Måløv",
+        "distance": 3.15
+    },
+    {
+        "station A": "Kildedal",
+        "station B": "Måløv",
+        "distance": 2.04
+    },
+    {
+        "station A": "Kildedal",
+        "station B": "Veksø",
+        "distance": 3.06
+    },
+    {
+        "station A": "Stenløse",
+        "station B": "Veksø",
+        "distance": 3.8
+    },
+    {
+        "station A": "Egedal",
+        "station B": "Stenløse",
+        "distance": 1.54
+    },
+    {
+        "station A": "Egedal",
+        "station B": "Ølstykke",
+        "distance": 2.55
+    },
+    {
+        "station A": "Vinge",
+        "station B": "Ølstykke",
+        "distance": 3.54
+    },
+    {
+        "station A": "Frederikssund",
+        "station B": "Vinge",
+        "distance": 4.43
+    },
+    {
+        "station A": "Hellerup",
+        "station B": "Ryparken",
+        "distance": 2
+    },
+    {
+        "station A": "Bispebjerg",
+        "station B": "Ryparken",
+        "distance": 1.5
+    },
+    {
+        "station A": "Bispebjerg",
+        "station B": "Nørrebro",
+        "distance": 0.65
+    },
+    {
+        "station A": "Fuglebakken",
+        "station B": "Nørrebro",
+        "distance": 1.05
+    },
+    {
+        "station A": "Fuglebakken",
+        "station B": "Grøndal",
+        "distance": 0.9
+    },
+    {
+        "station A": "Flintholm",
+        "station B": "Grøndal",
+        "distance": 1.16
+    },
+    {
+        "station A": "Flintholm",
+        "station B": "KB Hallen",
+        "distance": 1.04
+    },
+    {
+        "station A": "KB Hallen",
+        "station B": "Ålholm",
+        "distance": 0.64
+    },
+    {
+        "station A": "Danshøj",
+        "station B": "Ålholm",
+        "distance": 0.85
+    },
+    {
+        "station A": "Danshøj",
+        "station B": "Vigerslev Alle",
+        "distance": 0.67
+    },
+    {
+        "station A": "Ny Ellebjerg",
+        "station B": "Vigerslev Alle",
+        "distance": 1.35
+    }
+]
